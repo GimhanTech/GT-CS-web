@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimhan Technologies</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        /* Navigation Styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 8px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about, .owner {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* Image Styling */
+        .about img, .owner img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        /* Responsive Grid */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .container > div {
+            flex: 1 1 45%;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container > div {
+                flex: 1 1 100%;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Welcome to Gimhan Technologies</h1>
+    <h4>Innovative Solutions for a Smarter Future</h4>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#owner">Owner</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About Gimhan Technologies</h2>
+    <h3>Innovating Today, Tomorrow</h3>
+    <div class="container">
+        <div>
+            <p>Gimhan Technologies is dedicated to developing innovative solutions in technology, from software development to IoT projects. Our goal is to simplify complex problems and provide users with high-quality and reliable technology services.</p>
+            <p>Our services include smart automation, Wi-Fi control projects, web development, and customized software solutions. We pride ourselves on our creativity, technical skills, and commitment to client satisfaction.</p>
+        </div>
+        <div>
+            <img src="gimhan_technologies_logo.png" alt="Gimhan Technologies">
+        </div>
+    </div>
+</section>
+
+<!-- Owner Section -->
+<section id="owner" class="owner">
+    <h2>About the Owner - Gaveesha Gimhan</h2>
+    <div class="container">
+        <div>
+            <img src="me_latest.png" alt="Gaveesha Gimhan">
+        </div>
+        <div>
+            <p>Hello, I'm Gaveesha Gimhan, the founder of Gimhan Technologies. I am passionate about technology and love to work on innovative projects that solve real-world problems. My expertise includes programming, electronics, and project management.</p>
+            <p>I believe in continuous learning and staying updated with the latest tech trends. Through Gimhan Technologies, I aim to deliver exceptional technology solutions that empower individuals and businesses.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out for collaboration, feedback, or any queries about our services.</p>
+    <h3>Email: <a href="mailto:gimhangavee@gmail.com">gimhangavee@gmail.com</a></h3>
+    <h3>Phone : +94 770 340 609</h3>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Gimhan Technologies | Designed by Gaveesha Gimhan</p>
+</footer>
+
+<script>
+    // Optional JavaScript for Smooth Scroll
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
